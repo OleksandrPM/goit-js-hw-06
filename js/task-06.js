@@ -5,7 +5,7 @@ validationInputEl.addEventListener('blur', onValidationInputElBlur);
 validationInputEl.addEventListener('focus', onValidationInputElFocus);
 
 function onValidationInputElBlur(event) {
-  if (event.currentTarget.value.length != inputLength) {
+  if (event.currentTarget.value.length !== inputLength) {
     validationInputEl.classList.add('invalid');
   } else {
     validationInputEl.classList.add('valid');
